@@ -12,17 +12,18 @@
     }    
     /* continuação para colocar a imagem ao lado dos paragrafos com display:block; na css style. */
     section#login > div#imagem {
-        float: left;
-        width: 30%;
-        height: 100%;
+        float: left; /* posição da img */
+        width: 30%; /* largura da img */
+        height: 100%; /* altura da img */
     }
 
     section#login > div#formulario {
-        float: right;
-        width: 70%;
+        float: right; /* posição do formulario */
+        width: 70%; /* tamanho do formulario */
     }
-}
 
+}
+/*  */
 @media screen and (min-width: 992px) {
 
     body{
@@ -32,16 +33,24 @@
         section#login{
             width: 950px;
         }
-        
+         /* continuação para colocar a imagem ao lado dos paragrafos com display:block; na css style. */
         section#login > div#imagem{
-        float: left;
+        float: right;
         width: 50%;
         height: 100%;
     }
 
     section#login > div#formulario{
-        float: right;
+        float: left;
         width: 50%;
     }
 
+    div#formulario > h1 {
+    font-size: 2em;
+    }
+    
+
+    div#formulario > p {
+        font-size: 1.2em;
+    }
 }
